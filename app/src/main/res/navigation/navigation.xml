@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/login_fragment"
+    >
+    <fragment
+        android:id="@+id/login_fragment"
+        android:name="com.test.vkapp.ui.login.LoginFragment"
+        android:label="@string/login_title"
+        >
+        <action
+            android:id="@+id/action_to_friends"
+            app:destination="@id/friends_fragment"
+            app:enterAnim="@anim/fade_slide_in_from_right"
+            app:exitAnim="@anim/fade_slide_out_to_left"
+            app:popExitAnim="@anim/fade_slide_out_to_right"
+            app:popEnterAnim="@anim/fade_slide_in_from_left"
+            />
+    </fragment>
+    <fragment
+        android:id="@+id/friends_fragment"
+        android:name="com.test.vkapp.ui.friendslist.FriendsFragment"
+        android:label="@string/friends_title"
+        >
+        <argument
+            android:name="user_id"
+            app:argType="string"
+        />
+        <argument
+            android:name="access_token"
+            app:argType="string"
+        />
+    </fragment>
+</navigation>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">VK Friends</string>
+    <string name="login_title">Вход</string>
+    <string name="friends_title">Друзья</string>
+    <string name="login_repeat_dialog_message">Для получения списка друзей нужно выполнить вход</string>
+    <string name="login_repeat_action">Войти</string>
+    <string name="friends_refresh_button">Обновить</string>
+    <string name="friends_request_button_label">Показать еще…</string>
+    <string name="friends_request_failed_toast">Не удалось загрузить страницу</string>
+<!--    todo remove -->
+    <string name="currency_details_title">%s</string>
+    <string name="currency_details_empty_list">Нет информации по выбранной валюте</string>
+    <string name="currency_rate_label_value">%s</string>
+    <string name="currency_rate_value_format">%.4f</string>
+    <string name="search_hint">Поиск валюты…</string>
+</resources>
